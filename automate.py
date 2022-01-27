@@ -7,13 +7,13 @@ def jobone():
 	print ("Fetching Tweets")
 	c = twint.Config()
 	# choose username (optional)
-	c.Username = "insert username here"
+	c.Username = "irfankkhairullah"
 	# choose search term (optional)
-	c.Search = "insert search term here"
+	c.Search = "xlhome"
 	# choose beginning time (narrow results)
-	c.Since = "2018-01-01"
+	c.Since = "2020-01-01"
 	# set limit on total tweets
-	c.Limit = 1000
+	c.Limit = 5000
 	# no idea, but makes the csv format properly
 	c.Store_csv = True
 	# format of the csv
@@ -26,19 +26,19 @@ def jobtwo():
 	print ("Fetching Tweets")
 	c = twint.Config()
 	# choose username (optional)
-	c.Username = "insert username here"
+	c.Username = "irfankkhairullah"
 	# choose search term (optional)
-	c.Search = "insert search term here"
+	c.Search = "#xlhome"
 	# choose beginning time (narrow results)
-	c.Since = "2018-01-01"
+	c.Since = "2021-01-01"
 	# set limit on total tweets
-	c.Limit = 1000
+	c.Limit = 5000
 	# no idea, but makes the csv format properly
 	c.Store_csv = True
 	# format of the csv
 	c.Custom = ["date", "time", "username", "tweet", "link", "likes", "retweets", "replies", "mentions", "hashtags"]
 	# change the name of the csv file
-	c.Output = "filename2.csv"
+	c.Output = "xlhome.csv"
 	twint.run.Search(c)
 
 # run once when you start the program
